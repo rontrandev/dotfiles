@@ -4,5 +4,5 @@
 local map = LazyVim.safe_keymap_set
 
 -- TAB NAVIGATION
-map("n", "gt", "<cmd>bprevious<cr>", { desc = "Go to previous tab page" })
-map("n", "gT", "<cmd>bnext<cr>", { desc = "Go to next tab page" })
+map("n", "gT", "<cmd>bprevious<cr>", { desc = "Go to previous tab page" })
+map("n", "gt", "<cmd>bnext<cr>", { desc = "Go to next tab page" })
