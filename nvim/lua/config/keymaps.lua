@@ -17,3 +17,9 @@ map("n", "6gt", "<cmd>BufferLineGoToBuffer 6<cr>", { desc = "Go the tab page ind
 map("n", "7gt", "<cmd>BufferLineGoToBuffer 7<cr>", { desc = "Go the tab page index 7" })
 map("n", "8gt", "<cmd>BufferLineGoToBuffer 8<cr>", { desc = "Go the tab page index 8" })
 map("n", "9gt", "<cmd>BufferLineGoToBuffer 9<cr>", { desc = "Go the tab page index 9" })
+
+-- Pick to close tab page
+local wk = require("which-key")
+wk.add({
+  { "<leader>bc", "<cmd>BufferLinePickClose<cr>", desc = "Pick to Delete Buffer", icon = "󰈔", mode = "n" },
+})
