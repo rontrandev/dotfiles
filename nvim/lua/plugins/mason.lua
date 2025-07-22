@@ -3,6 +3,9 @@ return {
   opts = {
     ensure_installed = {
       "gopls",
+      "css-lsp",
+      "html-lsp",
+      "typescript-language-server",
     },
   },
 }
