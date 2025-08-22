@@ -13,3 +13,9 @@ nnoremap <leader>cel :action RunClass<CR>
 noremap ]e :action GotoNextError<CR>
 " Go to previous error
 noremap [e :action GotoPreviousError<CR>
+
+" Comment line
+nnoremap gcc :action CommentByLineComment<CR>
+
+" Comment selected lines
+vnoremap gc :action CommentByLineComment<CR>
