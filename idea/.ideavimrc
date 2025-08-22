@@ -1,0 +1,15 @@
+source ~/.vimrc
+
+let mapleader = " "
+nnoremap <leader>bd :action CloseContent<CR>
+
+" Execute last executed command
+nnoremap <leader>cec :action Run<CR>
+
+" Execute at current line
+nnoremap <leader>cel :action RunClass<CR>
+
+" Go to next error
+noremap ]e :action GotoNextError<CR>
+" Go to previous error
+noremap [e :action GotoPreviousError<CR>
