@@ -1,7 +1,13 @@
 source ~/.vimrc
 
 let mapleader = " "
+
+" Close current tab
 nnoremap <leader>bd :action CloseContent<CR>
+" Close all tabs to the right
+nnoremap <leader>br :action CloseAllToTheRight<CR>
+" Close all tabs to the left
+nnoremap <leader>bl :action CloseAllToTheLeft<CR>
 
 " Execute last executed command
 nnoremap <leader>cec :action Run<CR>
@@ -19,3 +25,4 @@ nnoremap gcc :action CommentByLineComment<CR>
 
 " Comment selected lines
 vnoremap gc :action CommentByLineComment<CR>
+
