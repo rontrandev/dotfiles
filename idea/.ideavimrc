@@ -8,6 +8,8 @@ nnoremap <leader>bd :action CloseContent<CR>
 nnoremap <leader>br :action CloseAllToTheRight<CR>
 " Close all tabs to the left
 nnoremap <leader>bl :action CloseAllToTheLeft<CR>
+" Close other tabs
+nnoremap <leader>bo :action CloseAllEditorsButActive<CR>
 
 " Execute last executed command
 nnoremap <leader>cec :action Run<CR>
@@ -26,3 +28,15 @@ nnoremap gcc :action CommentByLineComment<CR>
 " Comment selected lines
 vnoremap gc :action CommentByLineComment<CR>
 
+" Find files
+nnoremap <leader>ff :action GotoFile<CR>
+" Find recent files
+nnoremap <leader>fr :action RecentFiles<CR>
+" Find jvm class
+nnoremap <leader>fjc :action GotoClass<CR>
+
+" Search Grep
+nnoremap <leader>sg :action FindInPath<CR>
+
+" Open menu action
+noremap <leader>m :action MoreRunToolbarActions<CR>
