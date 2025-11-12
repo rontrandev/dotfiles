@@ -1,5 +1,5 @@
 return {
-  "fokle/tokyonight.nvim",
+  "folke/tokyonight.nvim",
   lazy = true,
   opts = {
     style = "moon",
