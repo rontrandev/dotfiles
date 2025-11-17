@@ -17,6 +17,9 @@ nnoremap <leader>cec :action Run<CR>
 " Execute at current line
 nnoremap <leader>cel :action RunClass<CR>
 
+" Run Test Coverage
+nnoremap <leader>rtc :action RunCoverage<CR>
+
 " Go to next error
 noremap ]e :action GotoNextError<CR>
 " Go to previous error
@@ -40,3 +43,9 @@ nnoremap <leader>sg :action FindInPath<CR>
 
 " Open menu action
 noremap <leader>m :action MoreRunToolbarActions<CR>
+
+" Go to implementation
+nnoremap gI :action GotoImplementation<CR>
+
+" Explorer snack
+nnoremap <leader>e :action ActivateProjectToolWindow<CR>
