@@ -27,3 +27,7 @@ ideavim2git:
 git2ideavim:
 	rm -rf ~/.ideavimrc
 	cp ~/Documents/dev/dotfiles/idea/.ideavimrc ~/.ideavimrc
+
+augmentskill2git:
+	rm -rf ~/Documents/dev/dotfiles/agent/skills/
+	cp -R ~/.augment/skills ~/Documents/dev/dotfiles/agent/skills
