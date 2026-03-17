@@ -57,8 +57,6 @@ A structured template for AI agents to generate complete technical specification
     - [No abstractions for single-use code]
     - [No error handling for impossible scenarios]
 
-**Ticket:** [Link to ticket]
-
 **Requester:** [Who requested this and where — e.g., Nick via Slack, product brief, etc.]
 
 ---

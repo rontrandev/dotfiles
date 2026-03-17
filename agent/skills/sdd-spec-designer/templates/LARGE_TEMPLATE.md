@@ -32,8 +32,6 @@ A comprehensive template for AI agents to generate specs for **large tasks** (8+
 
 **Context:** [What exists today, what's the gap, what triggered this work, and any prior attempts.]
 
-**Ticket:** [Link to epic / parent ticket]
-
 **Requester:** [Who requested this and where]
 
 **Stakeholders:** [Product, engineering, design, ops — who needs to sign off]

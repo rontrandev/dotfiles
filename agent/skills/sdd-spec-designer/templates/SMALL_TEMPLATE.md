@@ -19,8 +19,6 @@ A lightweight template for AI agents to generate specs for small tasks (1–2 st
 
 **Why:** [Why this matters — user impact, technical debt, blocker, etc.]
 
-**Ticket:** [Link to ticket]
-
 ---
 
 ## Context
