@@ -32,6 +32,8 @@ A comprehensive template for AI agents to generate specs for **large tasks** (8+
 
 **Context:** [What exists today, what's the gap, what triggered this work, and any prior attempts.]
 
+**Ticket:** [Link to epic / parent ticket]
+
 **Requester:** [Who requested this and where]
 
 **Stakeholders:** [Product, engineering, design, ops — who needs to sign off]
@@ -236,55 +238,42 @@ Only include scenarios that are **realistically possible** given the requirement
 
 ---
 
-## 14. Tasks
+## 14. Workstream Breakdown
 
-Break into tasks that:
+<aside>
+💡
 
-- Can each be completed in one session
-- Have a clear verify step
-- Are safe to commit independently
+**For AI Agents:** Each workstream should map to a major requirement or area of the system. **Do NOT generate child specs automatically** — list workstreams only. Child specs are created **on demand** when a team member picks a workstream and asks the AI agent to spec it out. Use the appropriate template (Small or Medium) based on the workstream's complexity. Link child specs in the table once created.
 
-### T1: [Noun phrase — what gets built]
+</aside>
 
-**Requirement:** [The requirement that this task solves or partially solves]
+<aside>
+🧑‍💻
 
-**Do:** [Specific changes]
+**For Engineers:** Pick a workstream from the table below, then ask the AI agent to generate a spec for it using the matching Small or Medium template. This keeps each spec focused and avoids context overload.
 
-**Files:**
+</aside>
 
-- `path/to/file`
-- `path/to/file-test`
+| Workstream | Description | Spec Size | Spec Link | Dependencies | Status |
+| --- | --- | --- | --- | --- | --- |
+| [e.g., API Gateway] | [What this workstream delivers] | [Small / Medium] | [Link to child spec] | [e.g., Blocked by Workstream 2] | [🔴 Not started / 🟡 In progress / 🟢 Done] |
+| [e.g., Data Migration] | [What this workstream delivers] | [Small / Medium] | [Link to child spec] | [Dependencies] | [Status] |
+| [e.g., Observability & Alerts] | [What this workstream delivers] | [Small / Medium] | [Link to child spec] | [Dependencies] | [Status] |
 
-**Verify:** `command` or "Manual: [check]"
-
-### T2: [Noun phrase — what gets built]
-
-**Requirement:** [The requirement that this task solves or partially solves]
-
-**Do:** [Specific changes]
-
-**Files:**
-
-- `path/to/file`
-- `path/to/file-test`
-
-**Verify:** `command` or "Manual: [check]"
-
-### T3: [Noun phrase — what gets built]
-
-*[Repeat pattern as needed…]*
+**Suggested order:** [Describe the recommended sequencing of workstreams and why — e.g., "Start with Workstream 1 (API Gateway) since Workstreams 2 and 3 depend on its contracts."]
 
 ---
 
 ## Done
 
-[End-to-end verification after all tasks]
+[End-to-end verification after all workstreams are complete]
 
-- [ ]  `build/test command passes`
-- [ ]  Manual: [what to verify in UI/API]
+- [ ]  All child specs completed and verified
+- [ ]  Cross-workstream integration tested end-to-end
 - [ ]  No regressions in [related area]
 - [ ]  Success metrics baseline captured
 - [ ]  Monitoring / dashboards in place
+- [ ]  Rollout plan executed per Section 13
 
 ---
 
