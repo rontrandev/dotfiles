@@ -31,3 +31,7 @@ git2ideavim:
 augmentskill2git:
 	rm -rf ~/Documents/dev/dotfiles/agent/skills/
 	cp -R ~/.augment/skills ~/Documents/dev/dotfiles/agent/skills
+
+git2augmentkill:
+	rm -rf ~/.augment/skills
+	cp -R ~/Documents/dev/dotfiles/agent/skills ~/.augment/skills
