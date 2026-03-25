@@ -14,12 +14,13 @@ produce a complete, ready-to-review technical specification.
 ## Workflow
 
 1. **Understand** the requirement — ask clarifying questions if ambiguous
-2. **Classify size** — pick Small, Medium, or Large based on the sizing
+2. **Analyze the code** — inspect the relevant parts of the codebase (files, services, schemas) touched by the requirement before estimating scope
+3. **Classify size** — pick Small, Medium, or Large based on the sizing
    guide below
-3. **Read the behavioral rules** in `BEST_PRACTICES.md` before generating
-4. **Read the matching template** from `templates/` and fill in every
+4. **Read the behavioral rules** in `BEST_PRACTICES.md` before generating
+5. **Read the matching template** from `templates/` and fill in every
    section
-5. **Flag gaps** — write `⚠️ TBD` inline and list all gaps in Open
+6. **Flag gaps** — write `⚠️ TBD` inline and list all gaps in Open
    Questions
 
 ## Sizing Guide
