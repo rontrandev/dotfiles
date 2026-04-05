@@ -35,3 +35,12 @@ augmentskill2git:
 git2augmentkill:
 	rm -rf ~/.augment/skills
 	cp -R ~/Documents/dev/dotfiles/agent/skills ~/.augment/skills
+
+opencode2git:
+	rm -rf ~/Documents/dev/dotfiles/agent/skills/
+	cp -R ~/.opencode/skills ~/Documents/dev/dotfiles/agent/skills
+
+git2opencode:
+	rm -rf ~/.opencode/skills
+	cp -R ~/Documents/dev/dotfiles/agent/skills/ ~/.opencode/skills
+
