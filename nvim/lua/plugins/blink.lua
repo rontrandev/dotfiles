@@ -3,6 +3,7 @@ return {
   opts = {
     keymap = {
       preset = "default",
+      ["<CR>"] = { "accept", "fallback" },
       ["<Tab>"] = {
         function(cmp)
           local neocodeium = require("neocodeium")
