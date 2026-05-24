@@ -6,3 +6,11 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+-- Disable AI completions for sensitive files
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = { ".env", ".env.*", ".envrc", "*.pem", ".secret*", "auth.json" },
+  callback = function(args)
+    vim.b[args.buf].neocodeium_enabled = false
+  end,
+})
