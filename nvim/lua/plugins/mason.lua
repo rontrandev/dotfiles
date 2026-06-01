@@ -9,6 +9,7 @@ return {
       "gopls",
       "html-lsp",
       "json-lsp",
+      "kotlin-language-server",
       "typescript-language-server",
     },
   },
