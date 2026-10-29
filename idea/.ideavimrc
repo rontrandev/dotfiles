@@ -46,6 +46,7 @@ noremap <leader>m :action MoreRunToolbarActions<CR>
 
 " Go to implementation
 nnoremap gI :action GotoImplementation<CR>
+nnoremap <C-t> :action Back<CR>
 
 " Explorer snack
 nnoremap <leader>e :action ActivateProjectToolWindow<CR>
